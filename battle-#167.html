@@ -1,0 +1,48 @@
+<div class="circle"></div>
+<div class="outer">
+  <div class="outer inner"></div>
+  <div class="outer two"></div>
+</div>
+<div></div>
+<style>
+  body{
+    background:#0D1335;
+    position:relative;
+  }
+  .circle{
+    width:40;
+    height:40;
+    border-radius:50%;
+    background:#73C6EA;
+    position:relative;
+    top:122;
+    left:171;
+    z-index:3;
+  }
+  .outer{
+    width: 227;      
+    height: 100;    
+    background-color: #0D1335; 
+    border-radius: 50% / 50%;
+    position:relative;
+    border: 10px solid #FBFAE2;
+    top:45;
+    left:70;
+  }
+  .inner{
+    position:relative;
+    border: 10px solid #4FA07B;
+    transform:rotate(115deg);
+    top:-6;
+    left:-7;
+    z-index:1;
+  }
+  .two{
+    position:relative;
+    top:-130;
+    left:-10;
+    border: 10px solid #DC6638;
+    transform:rotate(60deg);
+    z-index:0;
+  }
+</style>
