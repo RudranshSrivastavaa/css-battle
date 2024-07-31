@@ -1,0 +1,48 @@
+<div class="circle"></div>
+<div class="circle b"></div>
+<div class="circle c"></div>
+<div class="triangle"></div>
+<style>
+  body {
+            background: #F0CD48;
+        }
+        .circle {
+            width: 100px;
+            height: 100px;
+            background: #66284A;
+            border-radius: 50%;
+            margin-top: 30px;
+            margin-left: 140px;
+        }
+        .b {
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+        .c {
+            margin-top: -100px;
+            margin-left: 240px;
+        }
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 90px solid transparent;
+            border-right: 90px solid transparent;
+            border-bottom: 100px solid #66284A;
+            margin-top: -160px;
+            margin-left: 100px;
+            position: relative;
+        }
+        .triangle::after {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: -100px;
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 110px solid #F0CD48; 
+            z-index: -1;
+        }
+</style>
+
