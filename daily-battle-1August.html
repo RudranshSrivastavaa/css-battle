@@ -1,0 +1,43 @@
+<div class="r"></div>
+<div class="s"></div>
+<style>
+  body{
+    background:#301E53;
+  }
+  .r{
+    width:52;
+    height:100;
+    background:#766D94;
+    margin-left:40;
+    margin-top:43;
+    position:absolute;
+  } 
+  .r::before{
+    position:absolute;
+    content:'';
+    width:52;
+    height:100;
+    background:#766D94;
+    top: -24px;
+    left: 30;
+    transform:rotate(90deg);
+  }
+  .s{
+    position:absolute;
+    width:52;
+    height:100;
+    background:#766D94;
+    margin-top:140;
+    margin-left:290
+  }
+  .s::before{
+    position:absolute;
+    content:'';
+    width:52;
+    height:100;
+    background:#766D94;
+    top: 24px;
+    left: -25;
+    transform:rotate(90deg);
+  }
+</style>
