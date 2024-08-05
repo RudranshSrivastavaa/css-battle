@@ -1,0 +1,61 @@
+<div class="s"></div>
+<div class="a"></div>
+<div class="c"></div>
+<style>
+  body{
+    background:#49C85B;
+  }
+  .s{
+    width:60;
+    height:60;
+    background:#FFFFFF;
+    position: relative;
+    margin-top:265;
+    margin-left:10;
+  }
+  .s::before{
+    content:'';
+    width:60;
+    height:60;
+    display: block;
+    background:#FFFFFF;
+    position: absolute;
+    margin-left:100;
+  }
+  .s::after{
+    content:'';
+    width:60;
+    height:60;
+    display: block;
+    background:#FFFFFF;
+    margin-left:200;
+     position: absolute;
+  }
+  .a{
+    width:60;
+    height:60;
+    background:#FFFFFF;
+    margin-top:-60;
+    margin-left:310
+  }
+  .c{
+  width:80;
+  height:40;
+  background-color:#30230A;
+  border-top-left-radius:100px;
+  border-top-right-radius:100px;
+  margin-top:-230;
+  margin-left:70;
+  position:absolute;
+  }
+  .c::before{
+  content:''; 
+    width:80;
+    height:40;
+    position:absolute; 
+    background-color:#30230A;
+    border-top-left-radius:100px;
+    border-top-right-radius:100px;
+    margin-left:160;
+  }
+</style>
